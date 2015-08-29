@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <link rel="stylesheet" href="lib/bootstrap.min.css">
+  <link rel="stylesheet" href="lib/font-awesome.min.css">
+  <style>
+  .outer-box{
+    padding: 20px; border: 1px solid #d4d4d4;box-shadow: 0 1px 6px rgba(0,0,0,0.175);border-radius: 3px;background-color: #fff;
+  }
+  .section{
+    padding: 50px; 
+  }
+  .morecontent span {
+    display: none;
+  }
+  .comment {
+      width: 100%;
+    }
+  .grid-spaces{
+    margin-bottom: 20px;
+  }
+  .no-pad{ padding: 0;}
+  .no-pad-rt{ padding-right: 0}
+  .text-white{ color: #fff }
+  .social-radius{ border-top-left-radius: 4px; border-bottom-left-radius: 4px; }
+  .social-text-radius{ border-top-right-radius: 4px; border-bottom-right-radius: 4px; padding:10px 0}
+  .twitter-bg{ background-color: #55aaeb; }
+  .fb-bg{ background-color: #3f5898; }
+  .gplus-bg{ background-color: #de4b39; }
+  .insta-bg{ background-color: #3c729d; }
+  .in-bg{ background-color: #323335; }
+  .bg-white{ background: #fff }
+  .review h3{ color: #00a59b}
+
+  </style>
+
+</head>
+<body style="background-color: #d4d4d4">
+  <section class="section review">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <h3>Pending Reviews</h3>
+          <br>
+          <div class="outer-box">
+            <p class="comment more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus numquam facilis enim eaque, tenetur nam id qui vel velit similique nihil iure molestias aliquam</p>
+            <div class="btn-group grid-spaces">
+              <button type="button" class="btn btn-default">
+              <i class="fa fa-thumbs-o-up"></i> Upvote</button>
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                <span>192</span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Test1</a></li>
+                <li><a href="#">Test2</a></li>
+                <li><a href="#">Something else here</a></li>
+              </ul>
+            </div>
+            <div class="btn-group grid-spaces">
+              <button type="button" class="btn btn-default"><i class="fa fa-flag"></i> Flag</button>
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                <span>32</span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Test3</a></li>
+                <li><a href="#">Test4</a></li>
+                <li><a href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+   <section class="review">
+    <div class="container">
+      <div class="row">
+      <div class="col-md-4 col-sm-6 grid-spaces">
+        <h3>Connect With Us</h3>
+        <br>
+        <a href="#" class="text-center grid-spaces">
+          <div class="col-md-2 social-radius twitter-bg">
+            <i class="fa fa-twitter fa-2x text-white" style="padding:6px 0;
+            "></i>
+          </div>
+          <div class="col-md-10 no-pad">
+            <div class="center text-uppercase social-text-radius bg-white">Twitter</div>
+          </div>
+        </a>
+        <div class="clearfix"></div>
+        <br>
+        <a href="#" class="text-center grid-spaces">
+          <div class="col-md-2 social-radius fb-bg">
+            <i class="fa fa-facebook fa-2x text-white" style="padding:6px 0;
+            "></i>
+          </div>
+          <div class="col-md-10 no-pad">
+            <div class="center text-uppercase social-text-radius bg-white">Facebook</div>
+          </div>
+        </a>
+         <div class="clearfix"></div>
+        <br>
+        <a href="#" class="text-center grid-spaces">
+          <div class="col-md-2 social-radius gplus-bg">
+          <i class="fa fa-google-plus fa-2x text-white" style="padding:6px 0;
+            "></i>
+          </div>
+          <div class="col-md-10 no-pad">
+            <div class="center text-uppercase social-text-radius bg-white">Google Plus</div>
+          </div>
+        </a>
+         <div class="clearfix"></div>
+        <br>
+        <a href="#" class="text-center grid-spaces">
+          <div class="col-md-2 social-radius insta-bg">
+            <i class="fa fa-instagram fa-2x text-white" style="padding:6px 0;
+            "></i>
+          </div>
+          <div class="col-md-10 no-pad">
+            <div class="center text-uppercase social-text-radius bg-white">Instagram</div>
+          </div>
+        </a>
+         <div class="clearfix"></div>
+        <br>
+        <a href="#" class="text-center grid-spaces">
+          <div class="col-md-2 social-radius in-bg">
+          <i class="fa fa-linkedin fa-2x text-white" style="padding:6px 0;
+            "></i>
+          </div>
+          <div class="col-md-10 no-pad">
+            <div class="center text-uppercase social-text-radius bg-white">Linked In</div>
+          </div>
+        </a>
+         <div class="clearfix"></div>
+      </div>
+      </div>
+    </div>
+   </section>
+   <script type="text/javascript" src="lib/jquery-1.11.0.min.js"></script>
+   <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+   <script>
+    $(document).ready(function() {
+      var showChar = 150;
+      var ellipsestext = "...";
+      var moretext = "Show more";
+      var lesstext = "Show less";
+      $('.more').each(function() {
+          var content = $(this).html();
+          if(content.length > showChar) {
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar-1, content.length - showChar);
+            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+            $(this).html(html);
+          }
+      });
+ 
+      $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+          $(this).removeClass("less");
+          $(this).html(moretext);
+        } else {
+          $(this).addClass("less");
+          $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+      });
+    });
+   </script>
+</body>
+</html>
